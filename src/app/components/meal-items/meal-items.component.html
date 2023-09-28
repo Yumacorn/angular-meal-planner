@@ -1,0 +1,5 @@
+<div [ngClass]="{ favorite: meal.favorite }"class="meal" (dblclick)="onToggle(meal)">
+    <h3>{{ meal.title }} <fa-icon [ngStyle]="{ color: 'red' }" [icon]="faTimes" (click)="onDelete(meal)"></fa-icon></h3>
+    <p>{{ meal.protein }}</p>
+    <p>Cooked {{ meal.number_cooked }} times</p>
+</div>

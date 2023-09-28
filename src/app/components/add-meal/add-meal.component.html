@@ -1,0 +1,23 @@
+<form *ngIf="showAddMeal" class="add-form" (ngSubmit)="onSubmit()">  
+    <div class="form-control">
+        <label for="title">Title</label>
+        <input type="text" name="title" [(ngModel)]="title" id="title" placeholder="Add Meal">
+    </div>
+    <div class="form-control">
+        <label for="number_cooked">Number of times cooked</label>
+        <input type="text" name="number_cooked" [(ngModel)]="number_cooked" id="number_cooked" placeholder="Number of times cooked">
+    </div>
+    <div class="form-control">
+        <label for="protein">Protein</label>
+        <input type="text" name="protein" [(ngModel)]="protein" id="protein" placeholder="Add Protein">
+    </div>
+    <div class="form-control">
+        <label for="carb">Carb</label>
+        <input type="text" name="carb" [(ngModel)]="carb" id="carb" placeholder="Add Carb">
+    </div>
+    <div class="form-control form-control-check" >
+        <label for="favorite">Check Favorite</label>
+        <input type="checkbox" name="favorite" [(ngModel)]="favorite" id="favorite" default="false">
+    </div>
+    <input type="submit" value="Save Meal" class="btn btn-block">
+</form>
